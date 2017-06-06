@@ -6,15 +6,15 @@
     } // contruct
 
     public function load_dynamic_page() {
-      require_once('views/head.php');
       $page_elem = array(
         'about',
         'contact',
         'photos',
         'hero_image',
       );
-
       shuffle($page_elem);
+      require_once('views/head.php');
+
 
       foreach($page_elem as $elem) {
         // echo $elem.' ';
